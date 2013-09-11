@@ -1,0 +1,19 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteBase /
+
+<Files *.css>
+Order deny,allow
+Allow from all
+</Files>
+
+RewriteCond %{REQUEST_URI} ^(.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#RewriteCond %{REQUEST_URI} (.*)/(.*)/(.*)
+#RewriteRule ^(.*)/(.*)/(.*)$ index.php?page=$1&action=$2&date=$3 [L]
+
+#RewriteCond %{REQUEST_URI} (.*)/(.*)
+#RewriteRule ^(.*)/(.*)$ index.php?page=$1&date=$2 [L]

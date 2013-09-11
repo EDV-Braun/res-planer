@@ -1,0 +1,196 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #444;
+	font-size: 1em;
+}
+
+a {
+	color: darkorange;
+	text-decoration: none;
+}
+
+html, body {
+	height: 100%;
+}
+
+h3 {
+    width: 93%;
+    height: 23px;
+    background-color: #E3F6CE;
+    font-weight: normal;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+#wrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#top  {
+	background-color: #E3F6CE;
+	border-bottom: 2px solid #CCC;
+}
+
+#col1,#col2 {
+	border: 0px solid red;
+}
+
+#top {
+	position: absolute;
+	height: 80px;
+	width: 40%;
+}
+
+#left {
+	position: absolute;
+	top: 80px;
+	padding-top: 20px;
+	width: 10%;
+	height:60%;
+	border-right: 2px solid #CCC;
+}
+
+#bottom {
+	z-index: 10;
+	position: absolute;
+	bottom: 0px;
+	height: 50px;
+	width: 100%;
+}
+
+#col1 {
+	position: absolute;
+	top: 100px;
+	left: 12%;
+	height: 80%;
+	width: 28%;
+	overflow: auto;
+	
+}
+
+#col2 {
+	position: absolute;
+	right: 0px;
+	width: 60%;
+	height: 100%;
+}
+
+#calendar {
+	width: 100%;
+	height: 100%;
+}
+
+#calendar th {
+	border-right: 1px solid #AAA;
+	border-bottom: 2px solid #CCC;
+	background-color: #F8FBEF;
+	height: 80px;
+}
+
+#calendar td {
+	border-right: 1px solid #AAA;
+	cursor: pointer;
+	vertical-align: top;
+	padding: 2px;
+	width: 14.3%;
+}
+
+#calendar .act {
+	background-color: #E3F6CE;
+}
+
+#calendar td:hover {
+	background-color: #F8FBEF;
+}
+
+#calendar td.act:hover {
+	background-color: #E3F6CE;
+}
+
+#calendar .eintrag {
+	background-color: #EEE;
+	border: 1px solid #AAA;
+	min-height: 50px;
+	max-width: 100%;
+	padding: 2px;
+	margin-bottom: 2px;
+}
+
+#calendar .eintrag a {
+	color: #444;
+}
+
+#calendar .eintrag:hover {
+	background-color: #DDD;
+}
+
+select, textarea, input:not([type="submit"]) {
+	width: 93%;
+	font-size: 1.1em;
+}
+
+input,button {
+	font-size: 1em;
+}
+
+label {
+	display: block;
+}
+
+hr {
+	border: 0px;
+	background-color: #CCC;
+	height: 1px;
+}
+
+fieldset {
+	background-color: #E3F6CE;
+	width: 90%;
+}
+
+fieldset select, fieldset textarea, fieldset input:not([type="submit"]) {
+	width: 100%;
+}
+
+.inUse {
+	color: #888;
+}
+
+/* Sortable */
+
+.sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; width: 100%; }
+.sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 0.2em; font-size: 0.9em; height: auto; }
+.sortable li span { position: absolute; margin-left: -1.3em; }
+
+/* Details */
+
+table.res_details {
+    width: 93%;
+    border: 0px;
+    margin-bottom: 20px;
+}
+
+table.res_details th {
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+    height: 35px;
+    padding-left: 5px;
+}
+
+table.res_details td {
+    border-bottom: 1px solid #ccc;
+    height: 35px;
+    padding-left: 5px;
+}
+
+table.res_details tr:hover {
+    background-color: #F8FBEF;
+}
+
+td.buttons div {
+   padding-top: 5px;
+}
